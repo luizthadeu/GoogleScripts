@@ -5,7 +5,7 @@ function carregarDados() {
   
   rangeValues.forEach((row, rowId)=>{
     //Verifica se existe registro -> row[0] com algum dado, e se não foi enviado row[4] 'Enviado em' sem data
-    if(row[0] && !row[4]){
+    if(row[0] && !row[3]){
       const email = row[1];
       const nome = row[2];
 
